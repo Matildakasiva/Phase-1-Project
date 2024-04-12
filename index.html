@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>Train information</title>
+    <title>Train Information</title>
 </head>
 <body>
     <div id="front-page">
         <div class="video-container">
             <video autoplay muted loop id="video-background">
                 <source src="./assets/8290926-hd_1920_1080_30fps.mp4" type="video/mp4">
-              Your browser does not support the video tag.
+                Your browser does not support the video tag.
             </video>
-         
-        <div class="container">
+        
+
+          <div class="container">
             <div class="backgroundColor">
                 <h2 id="title">TrainTracker</h2>
                 <div class="welcome-message">
                     <h3>Welcome to <strong>TrainTracker</strong>, our Train Information website!</h3>
                     <p>Explore real-time departure and arrival information for trains at various stations.</p>
                 
-            
             <div class="destinationPictures">
                 <img src="./assets/central.jpg" alt="station">
                 <img src="./assets/platform.jpg" alt="platform">
@@ -30,10 +30,9 @@
                 <img src="./assets/Station_Antwerpen-Zuid.jpg" alt="Antwerpen-Zuid">
                 <img src="./assets/Ghent-sint-pieters.jpeg" alt="Ghent-sint-pieters">
             </div>
-    
-            </div>
+                </div>
             <button id="viewTrainInfoBtn">View Train Information</button>
-            </div>
+          </div>
         </div>
     </div>
 
@@ -41,199 +40,177 @@
         <header id="header">
             <h2>TrainTracker</h2>
             <br>
-            <h3 id="vehicle-name"></h3>
-            <h3>Enjoy travelling with us. We provide you with everything you require.</h3>
+            <h3 id="vehicle-name">Enjoy travelling with us. We provide you with everything you require.</h3>
         </header>
-       
+
         <div class="search-wrapper">
             <label for="search">Search station</label>
-            <input type="search" id="search"
-            placeholder="Type station name">
+            <input type="search" id="search" placeholder="Type station name">
             <button id="searchButton">Search</button>
         </div>
 
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/0.jpg" alt="Antwerp-central">
+                <div class="name" id="stationName0"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/1.jpeg" alt="Antwerp-Berchem">
+                <div class="name" id="stationName1"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/2.jpg" alt="Antwerp-south">
+                <div class="name" id="stationName2"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
 
 
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/0.jpg" alt="Antwerp-central">
-            <div  class="name" id="stationName0"></div>
-            <div class="station" id="stationDetails0">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/3.jpg" alt="Beveren">
+                <div class="name" id="stationName3"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div><div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/4.jpg" alt="Sint-Niklaas">
+                <div class="name" id="stationName4"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
             </div>
         </div>
-       </div>
-    
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/1.jpeg" alt="Antwerp-Berchem">
-            <div class="name" id="stationName1"></div>
-            <div class="station" id="stationDetails1">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/2.jpg" alt="Antwerp-south">
-            <div class="name" id="stationName2"></div>
-            <div class="station" id="stationDetails2">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
-    
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/3.jpg" alt="Beveren">
-            <div class="name" id="stationName3"></div>
-            <div  class="station" id="stationDetails3">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
-            </div>
-        </div>
-       </div>
-       
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/4.jpg" alt="Sint-Niklaas">
-            <div class="name" id="stationName4"></div>
-            <div  class="station" id="stationDetails4">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
-    
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/5.jpg" alt="Lokeren">
-            <div class="name" id="stationName5"></div>
-            <div  class="station" id="stationDetails5">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
-    
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/6.jpeg" alt="Ghent-Dampoort">
-            <div class="name" id="stationName6"></div>
-            <div  class="station" id="stationDetails6">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-              
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/7.jpeg" alt="Ghent-Sint-Pieters">
-            <div class="name" id="stationName7"></div>
-            <div  class="station" id="stationDetails7">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-               
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/8.jpg" alt="Brugge green">
-            <div class="name" id="stationName8"></div>
-            <div  class="station" id="stationDetails8">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-            
-    
-            </div>
-        </div>
-       </div>
-    
-       <div class="station-wrapper">
-        <div class="card">
-            <img src="./assets/9.jpg" alt="Oostende">
-            <div class="name" id="stationName9"></div>
-            <div  class="station" id="stationDetails9">
-                <div id="platform"></div>
-                <div id="delay"></div>
-                <div id="departure-delay"></div>
-                <div id="departure-canceled"></div>
-                <div id="arrival-delay"></div>
-                <div id="arrival-canceled"></div>
-                <div id="isExtrastop"></div>
-    
-            </div>
-        </div>
-       </div>
-      
-        <script src="./js/index.js"></script>
-    </body>
-    </html>
 
+
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/5.jpg" alt="Lokeren">
+                <div class="name" id="stationName5"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div><div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/6.jpeg" alt="Ghent-Dampoort">
+                <div class="name" id="stationName6"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/7.jpeg" alt="Ghent-sint-pieters">
+                <div class="name" id="stationName7"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/8.jpg" alt="Brugge green">
+                <div class="name" id="stationName8"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="station-wrapper">
+            <div class="card">
+                <img src="./assets/9.jpg" alt="Oostende">
+                <div class="name" id="stationName9"></div>
+                <div class="stationDetails">
+                    <div class="platform"></div>
+                    <div class="delay"></div>
+                    <div class="departure-delay"></div>
+                    <div class="departure-canceled"></div>
+                    <div class="arrival-delay"></div>
+                    <div class="arrival-canceled"></div>
+                    <div class="isExtrastop"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 
-    
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -39,13 +39,13 @@ fetch(`${BASE_URL}`)
 
       const detailsSelector = document.querySelector(`#stationDetails${index}`);
       if (detailsSelector) {
-        detailsSelector.querySelector('#platform').innerText = `Platform: ${stop.platform}`;
-        detailsSelector.querySelector('#delay').innerText = `Number of delays: ${stop.delay}`;
-        detailsSelector.querySelector('#departure-delay').innerText = `Number of delayed departures: ${stop.departureDelay}`;
-        detailsSelector.querySelector('#departure-canceled').innerText = `Number of canceled departures: ${stop.departureCanceled}`;
-        detailsSelector.querySelector('#arrival-delay').innerText = `Number of delayed arrivals: ${stop.arrivalDelay}`;
-        detailsSelector.querySelector('#arrival-canceled').innerText = `Number of canceled arrivals: ${stop.arrivalCanceled}`;
-        detailsSelector.querySelector('#isExtrastop').innerText = `Number of extra stops: ${stop.isExtraStop}`;
+        detailsSelector.querySelector('.platform').innerText = `Platform: ${stop.platform}`;
+        detailsSelector.querySelector('.delay').innerText = `Number of delays: ${stop.delay}`;
+        detailsSelector.querySelector('.departure-delay').innerText = `Number of delayed departures: ${stop.departureDelay}`;
+        detailsSelector.querySelector('.departure-canceled').innerText = `Number of canceled departures: ${stop.departureCanceled}`;
+        detailsSelector.querySelector('.arrival-delay').innerText = `Number of delayed arrivals: ${stop.arrivalDelay}`;
+        detailsSelector.querySelector('.arrival-canceled').innerText = `Number of canceled arrivals: ${stop.arrivalCanceled}`;
+        detailsSelector.querySelector('.isExtrastop').innerText = `Number of extra stops: ${stop.isExtraStop}`;
       }
     })
   })
