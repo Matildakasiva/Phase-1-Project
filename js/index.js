@@ -26,9 +26,9 @@ document.querySelector('#viewTrainInfoBtn').addEventListener('click', () => {
 
 
 
-const apiUrl = 'http://localhost:3000/stops';
+const BASE_URL= 'https://my-json-server.typicode.com/Matildakasiva/phase-1-project/stops'
 
-fetch(apiUrl)
+fetch(`${BASE_URL}`)
   .then((res) => res.json())
   .then(data => {
     data.stop.forEach((stop, index) => {
