@@ -47,5 +47,24 @@ fetch(apiUrl)
         detailsSelector.querySelector('#arrival-canceled').innerText = `Number of canceled arrivals: ${stop.arrivalCanceled}`;
         detailsSelector.querySelector('#isExtrastop').innerText = `Number of extra stops: ${stop.isExtraStop}`;
       }
-    });
+    })
   })
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search");
+    const stationCards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("keyup", function() {
+        const searchText = searchInput.value.toLowerCase();
+
+        stationCards.forEach(card => {
+            const stationName = card.querySelector("img").alt.toLowerCase();
+
+            if (stationName.includes(searchText)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
