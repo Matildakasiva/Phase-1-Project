@@ -1,179 +1,169 @@
 {
-    "version": "1.2",
-    "timestamp": "1712578680",
-    "vehicle": "BE.NMBS.IC1832",
-    "vehicleinfo": {
-      "name": "BE.NMBS.IC1832",
-      "shortname": "IC 1832"
-    },
-    "stops": {
-      "number": "10",
-      "stop": [
-        {
-          "id": "0",
-          "station": "Antwerp-Central",
-          "stationinfo": {
-            "name": "Antwerp-Central",
-            "standardname": "Antwerpen-Centraal"
-          },
-          "time": "1712567160",
-          "delay": "0",
-          "platform": "2",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+  "version": "1.2",
+  "timestamp": "1712991143",
+  "vehicle": "BE.NMBS.IC1832",
+  "vehicleinfo": {
+    "name": "BE.NMBS.IC1832",
+    "shortname": "IC 1832",
+    "number": "1832",
+    "type": "IC",
+    "locationX": "4.421101",
+    "locationY": "51.2172",
+    "@id": "http://irail.be/vehicle/IC1832"
+  },
+  "stops": {
+    "number": "5",
+    "stop": [
+      {
+        "id": "0",
+        "station": "Antwerp-Central",
+        "stationinfo": {
+          "locationX": "4.421101",
+          "locationY": "51.2172",
+          "id": "BE.NMBS.008821006",
+          "name": "Antwerp-Central",
+          "@id": "http://irail.be/stations/NMBS/008821006",
+          "standardname": "Antwerpen-Centraal"
         },
-        {
-          "id": "1",
-          "station": "Antwerp-Berchem",
-          "stationinfo": {
-            "name": "Antwerp-Berchem",
-            "standardname": "Antwerpen-Berchem"
-          },
-          "time": "1712567520",
-          "delay": "0",
-          "platform": "6",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "time": "1712999160",
+        "delay": "0",
+        "platform": "24",
+        "platforminfo": {
+          "name": "24",
+          "normal": "1"
         },
-        {
-          "id": "2",
-          "station": "Antwerp-South",
-          "stationinfo": {
-            "name": "Antwerp-South",
-            "standardname": "Antwerpen-Zuid"
-          },
-          "time": "1712567820",
-          "delay": "0",
-          "platform": "3",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "canceled": "0",
+        "left": "0",
+        "arrived": "0",
+        "departureDelay": "0",
+        "departureCanceled": "0",
+        "scheduledDepartureTime": "1712999160",
+        "scheduledArrivalTime": "1712999160",
+        "arrivalDelay": "0",
+        "arrivalCanceled": "0",
+        "isExtraStop": "0",
+        "departureConnection": "http://irail.be/connections/8821006/20240413/BE.NMBS.IC1832"
+      },
+      {
+        "id": "1",
+        "station": "Antwerp-Berchem",
+        "stationinfo": {
+          "locationX": "4.432221",
+          "locationY": "51.19923",
+          "id": "BE.NMBS.008821121",
+          "name": "Antwerp-Berchem",
+          "@id": "http://irail.be/stations/NMBS/008821121",
+          "standardname": "Antwerpen-Berchem"
         },
-        {
-          "id": "3",
-          "station": "Beveren",
-          "stationinfo": {
-            "name": "Beveren",
-            "standardname": "Beveren"
-          },
-          "time": "1712568420",
-          "delay": "0",
-          "platform": "2",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "arrivalDelay": "-60",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "time": "1712999460",
+        "delay": "0",
+        "platform": "9",
+        "platforminfo": {
+          "name": "9",
+          "normal": "1"
         },
-        {
-          "id": "4",
-          "station": "Sint-Niklaas",
-          "stationinfo": {
-            "name": "Sint-Niklaas",
-            "standardname": "Sint-Niklaas"
-          },
-          "time": "1712568960",
-          "delay": "0",
-          "platform": "2",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "canceled": "0",
+        "left": "0",
+        "arrived": "0",
+        "departureDelay": "0",
+        "departureCanceled": "0",
+        "scheduledDepartureTime": "1712999460",
+        "scheduledArrivalTime": "1712999400",
+        "arrivalDelay": "0",
+        "arrivalCanceled": "0",
+        "isExtraStop": "0",
+        "departureConnection": "http://irail.be/connections/8821121/20240413/BE.NMBS.IC1832"
+      },
+      {
+        "id": "2",
+        "station": "Ghent-Sint-Pieters",
+        "stationinfo": {
+          "locationX": "3.710675",
+          "locationY": "51.035896",
+          "id": "BE.NMBS.008892007",
+          "name": "Ghent-Sint-Pieters",
+          "@id": "http://irail.be/stations/NMBS/008892007",
+          "standardname": "Gent-Sint-Pieters"
         },
-        {
-          "id": "5",
-          "station": "Lokeren",
-          "stationinfo": {
-            "name": "Lokeren",
-            "standardname": "Lokeren"
-          },
-          "time": "1712569560",
-          "delay": "0",
-          "platform": "1",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "scheduledDepartureTime": "1712569560",
-          "scheduledArrivalTime": "1712569500",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "time": "1713003120",
+        "delay": "0",
+        "platform": "8",
+        "platforminfo": {
+          "name": "8",
+          "normal": "1"
         },
-        {
-          "id": "6",
-          "station": "Ghent-Dampoort",
-          "stationinfo": {
-            "name": "Ghent-Dampoort",
-            "standardname": "Gent-Dampoort"
-          },
-          "time": "1712570340",
-          "delay": "60",
-          "departureDelay": "60",
-          "departureCanceled": "0",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "canceled": "0",
+        "left": "0",
+        "arrived": "0",
+        "departureDelay": "0",
+        "departureCanceled": "0",
+        "scheduledDepartureTime": "1713003120",
+        "scheduledArrivalTime": "1713002760",
+        "arrivalDelay": "0",
+        "arrivalCanceled": "0",
+        "isExtraStop": "0",
+        "departureConnection": "http://irail.be/connections/8892007/20240413/BE.NMBS.IC1832"
+      },
+      {
+        "id": "3",
+        "station": "Brugge",
+        "stationinfo": {
+          "locationX": "3.216726",
+          "locationY": "51.197226",
+          "id": "BE.NMBS.008891009",
+          "name": "Brugge",
+          "@id": "http://irail.be/stations/NMBS/008891009",
+          "standardname": "Brugge"
         },
-        {
-          "id": "7",
-          "station": "Ghent-Sint-Pieters",
-          "stationinfo": {
-            "name": "Ghent-Sint-Pieters",
-            "standardname": "Gent-Sint-Pieters"
-          },
-          "time": "1712571000",
-          "delay": "2760",
-          "platform": "2",
-          "departureDelay": "2760",
-          "departureCanceled": "0",
-          "scheduledDepartureTime": "1712571000",
-          "scheduledArrivalTime": "1712570820",
-          "arrivalDelay": "60",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "time": "1713004740",
+        "delay": "0",
+        "platform": "10",
+        "platforminfo": {
+          "name": "10",
+          "normal": "1"
         },
-        {
-          "id": "8",
-          "station": "Brugge",
-          "stationinfo": {
-            "name": "Brugge",
-            "standardname": "Brugge"
-          },
-          "time": "1712572620",
-          "delay": "0",
-          "platform": "10",
-          "departureDelay": "0",
-          "departureCanceled": "1",
-          "scheduledDepartureTime": "1712572620",
-          "scheduledArrivalTime": "1712572440",
-          "arrivalDelay": "2880",
-          "arrivalCanceled": "0",
-          "isExtraStop": "0"
+        "canceled": "0",
+        "left": "0",
+        "arrived": "0",
+        "departureDelay": "0",
+        "departureCanceled": "0",
+        "scheduledDepartureTime": "1713004740",
+        "scheduledArrivalTime": "1713004560",
+        "arrivalDelay": "0",
+        "arrivalCanceled": "0",
+        "isExtraStop": "0",
+        "departureConnection": "http://irail.be/connections/8891009/20240413/BE.NMBS.IC1832"
+      },
+      {
+        "id": "4",
+        "station": "Oostende",
+        "stationinfo": {
+          "locationX": "2.925809",
+          "locationY": "51.228212",
+          "id": "BE.NMBS.008891702",
+          "name": "Oostende",
+          "@id": "http://irail.be/stations/NMBS/008891702",
+          "standardname": "Oostende"
         },
-        {
-          "id": "9",
-          "station": "Oostende",
-          "stationinfo": {
-            "name": "Oostende",
-            "standardname": "Oostende"
-          },
-          "time": "1712573400",
-          "delay": "0",
-          "platform": "5",
-          "departureDelay": "0",
-          "departureCanceled": "0",
-          "arrivalDelay": "0",
-          "arrivalCanceled": "1",
-          "isExtraStop": "0"
-        }
-      ]
-    }
+        "time": "1713005520",
+        "delay": "0",
+        "platform": "5",
+        "platforminfo": {
+          "name": "5",
+          "normal": "1"
+        },
+        "canceled": "0",
+        "left": "0",
+        "arrived": "0",
+        "departureDelay": "0",
+        "departureCanceled": "0",
+        "scheduledDepartureTime": "1713005520",
+        "scheduledArrivalTime": "1713005520",
+        "arrivalDelay": "0",
+        "arrivalCanceled": "0",
+        "isExtraStop": "0",
+        "departureConnection": ""
+      }
+    ]
   }
+}

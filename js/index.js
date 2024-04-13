@@ -1,5 +1,7 @@
 
-document.querySelector('#viewTrainInfoBtn').addEventListener('click', () => {
+document.addEventListener("DOMContentLoaded" , function() {
+
+  document.querySelector('#viewTrainInfoBtn').addEventListener('click', () => {
     const detailsSection = document.querySelector('#trainTrackerDetails');
   
     if (detailsSection) {
@@ -11,8 +13,9 @@ document.querySelector('#viewTrainInfoBtn').addEventListener('click', () => {
     }
   });
   
+  const BASE_URL = 'https://run.mocky.io/v3/99e3e479-e1af-427f-8855-c5bda3e618d8'
 
-  fetch('http://localhost:3000/vehicleinfo', {
+  fetch(`${BASE_URL}`, {
     method: 'GET',
     headers: {
         'content-Type' : 'application/json',
@@ -21,17 +24,15 @@ document.querySelector('#viewTrainInfoBtn').addEventListener('click', () => {
 .then((res) => res.json())
 .then(data => {
     console.log(data)
-    document.querySelector("#vehicle-name").innerText = `The train you are traveling with is ${data.name} `
+    document.querySelector("#vehicle-name").innerText = `The train you are traveling with is ${data.vehicle} `
 })
 
-
-
-const BASE_URL= 'https://my-json-server.typicode.com/Matildakasiva/phase-1-project/stops'
 
 fetch(`${BASE_URL}`)
   .then((res) => res.json())
   .then(data => {
-    data.stop.forEach((stop, index) => {
+    console.log(data.stops.stop)
+    data.stops.stop.forEach((stop, index) => {
       const stationSelector = document.querySelector(`#stationName${index}`);
       if (stationSelector) {
         stationSelector.innerText = `Station: ${stop.station}`;
@@ -50,7 +51,8 @@ fetch(`${BASE_URL}`)
     })
   })
 
-  document.addEventListener("DOMContentLoaded", function() {
+  
+    
     const searchInput = document.getElementById("search");
     const stationCards = document.querySelectorAll(".card");
 
@@ -67,4 +69,7 @@ fetch(`${BASE_URL}`)
             }
         });
     });
-});
+
+
+  })
+

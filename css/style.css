@@ -109,8 +109,10 @@ button:hover {
     font-weight: 300;
     border: 1rem;
     border-radius: 75em;
-   
 
+}
+#header, h2{
+    padding-top: 15px;
 }
 
 .search-wrapper {
@@ -199,16 +201,16 @@ label {
     border-radius: 8px 8px 0 0;
 }
 
-.station {
+.stationDetails {
     padding: 20px;
-    font-size: 16px;
+    font-size: 8px;
     line-height: 1.5;
     margin-bottom: 0;
     color: #666666;
 }
 
 .name {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     font-style: italic;
     padding: 20px;
