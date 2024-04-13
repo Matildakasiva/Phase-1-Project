@@ -29,7 +29,7 @@ Git clone https://github.com//Matildakasiva/Phase-1-Project.git
 ```
 
 # Live Link
-[Git](gh-pages link)
+[Git](https://matildakasiva.github.io/phase-1-project/)
 
 ## Technologies used
 HTML
